@@ -1,0 +1,78 @@
+---
+name: index
+route: /
+---
+
+import {Hello, meaningOfLife, SomeSection} from 'dist/docs/component'
+
+# Mdx testing
+
+<Hello name="from mdx"/>
+
+<!---
+This doesnt get replaced :/
+-->
+The meaning of life is {meaningOfLife}
+
+<SomeSection>
+    <h2>Html inside elements works</h2>
+    Buth markdown doesnt :/<br/>
+    ## oh no
+</SomeSection>
+
+
+## Markdown testing
+
+> Some quote
+
+Unordered List
+* A
+* B
+  * B.1
+  * B.2
+
+Ordered List
+
+1. Item 1
+2. Item 2
+3. Item 3
+    * Item 3a
+    * Item 3b
+
+
+Some Image here
+
+![GitHub Logos](https://markdown-here.com/img/icon256.png)
+
+```typescript
+type Unbox<T> = T extends Array<infer R> ? R : T;
+let isThisSomeCodeExample = true;
+```
+
+
+*This text will be italic*
+
+_This will also be italic_
+
+**This text will be bold**
+
+__This will also be bold__
+
+*You **can** combine them*
+
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+
+First Header | Second Header
+------------ | -------------
+Content cell 1 | Content cell 2
+Content column 1 | Content column 2
+
+
+# Emojis
+
+<!---
+TODO: Add support
+-->
+:tada:
