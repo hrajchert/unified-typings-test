@@ -14,7 +14,7 @@ The `types` folder contains the current types definitions and the `tests` folder
 
 I'm trying in various degrees to use generics and conditial types to infer correctly the type of the resulting AST from the plugins being used. I would like to also add inference for the processor options.
 
-Check out inside the test folder for the `markdown-basics.ts` and see how little types are defined in the program but we have some guarantees ;)
+Check out inside the test folder for the `markdown-basics.ts` and see how little types I have to write in the program and how many guarantees we have ;)
 
 ![](unified.gif)
 
